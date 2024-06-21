@@ -12,8 +12,8 @@ Start Zoo-keeper:
 -------------------------------
 bin/zookeeper-server-start.sh config/zookeeper.properties
 
-Open another window to start kafka
-But first ssh to to your ec2 machine as done above
+Now we will Open another window to start kafka
+But first ssh to the ec2 machine as done above
 
 
 Start Kafka-server:
@@ -23,9 +23,9 @@ export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
 cd kafka_2.12-3.3.1
 bin/kafka-server-start.sh config/server.properties
 
-It is pointing to private server , change server.properties so that it can run in public IP 
+It is pointing to private server , we will now change server.properties so that it can run in public IP 
 
-To do this , you can follow any of the 2 approaches shared belwo --
+To do this , we will follow any of the 2 approaches shared below --
 Do a "sudo nano config/server.properties" - change ADVERTISED_LISTENERS to public ip of the EC2 instance
 
 
